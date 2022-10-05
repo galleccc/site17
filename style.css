@@ -1,0 +1,29 @@
+    .Home {
+    background: black;
+    border-radius: 50%;
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    animation: 
+    ani1 0.5s 0.5s forwards, 
+    ani2 1s 0.5s;
+  }
+  
+  @keyframes ani1 {
+    to {
+      height: 150px;
+      margin: -75px 0 0 -75px;
+      width: 150px;
+    }
+  }
+  
+  @keyframes ani2 {
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
